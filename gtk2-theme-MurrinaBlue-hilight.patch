@@ -1,0 +1,11 @@
+--- MurrinaBlue-orig/gtk-2.0/gtkrc	2009-09-22 18:53:12.950452297 +0200
++++ MurrinaBlue/gtk-2.0/gtkrc	2009-09-22 18:53:45.313782640 +0200
+@@ -81,7 +81,7 @@
+ 	scrollbarstyle = 5 # Enable or disable circles, stripes, handles
+ 	animation = TRUE # FALSE = disabled, TRUE = enabled
+ 	scrollbar_color	= "#A7BED5"
+-	hilight_ratio 	= 0.909090
++	highlight_shade	= 0.909090
+ 	contrast	= 1.0
+ }
+ }
