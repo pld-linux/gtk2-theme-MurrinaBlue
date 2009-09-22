@@ -2,11 +2,12 @@
 Summary:	A simple blue theme
 Name:		gtk2-theme-%{shortname}
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes/GTK+
 Source0:	http://www.cimitan.com/murrine/files/%{shortname}.tar.bz2
 # Source0-md5:	c42534308c8d45a3c953571ea94f50ac
+Patch0:		gtk2-theme-MurrinaBlue-hilight.patch
 URL:		http://www.cimitan.com/murrine/
 Requires:	gtk2-theme-engine-murrine >= 0.90.0
 BuildArch:	noarch
@@ -17,6 +18,7 @@ A simple blue theme
 
 %prep
 %setup -q -n %{shortname}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
